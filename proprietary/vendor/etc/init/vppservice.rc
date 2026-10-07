@@ -14,4 +14,4 @@ service vendor.vppservice /vendor/bin/vppservice
     oneshot
 
     # start only when requested (uncomment below to disable service at boot)
-    disabled
+    #disabled

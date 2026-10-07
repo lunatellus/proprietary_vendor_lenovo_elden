@@ -9,10 +9,13 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/odm/etc/aac_richtap_l.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap_l.config \
     vendor/lenovo/elden/proprietary/odm/etc/aac_richtap_r.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap_r.config \
     vendor/lenovo/elden/proprietary/odm/etc/ueventd.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc \
-    vendor/lenovo/elden/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/lenovo/elden/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/lenovo/elden/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/lenovo/elden/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/ASR_binary/Whisper/libQnnHtpV79Skel.so:$(TARGET_COPY_OUT_VENDOR)/etc/ASR_binary/Whisper/libQnnHtpV79Skel.so \
+    vendor/lenovo/elden/proprietary/vendor/etc/ASR_binary/Whisper/speech_float.eai:$(TARGET_COPY_OUT_VENDOR)/etc/ASR_binary/Whisper/speech_float.eai \
+    vendor/lenovo/elden/proprietary/vendor/etc/HapticsPolicy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/HapticsPolicy.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/Hapticsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Hapticsconfig.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb \
     vendor/lenovo/elden/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp \
     vendor/lenovo/elden/proprietary/vendor/etc/acdbdata/ffv_models/ffv__5.0.2_0.1__eai_4.8_enpu_v5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__5.0.2_0.1__eai_4.8_enpu_v5.pmd \
@@ -98,19 +101,29 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/acdbdata/tuna_mtp/MTP_tuna_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_mtp/MTP_tuna_workspaceFileXml.qwsp \
     vendor/lenovo/elden/proprietary/vendor/etc/acdbdata/tuna_qrd/QRD_tuna_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd/QRD_tuna_acdb_cal.acdb \
     vendor/lenovo/elden/proprietary/vendor/etc/acdbdata/tuna_qrd/QRD_tuna_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd/QRD_tuna_workspaceFileXml.qwsp \
+    vendor/lenovo/elden/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.json \
+    vendor/lenovo/elden/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.json \
+    vendor/lenovo/elden/proprietary/vendor/etc/audio/audio_module_config_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_module_config_primary.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/audio_effects.conf \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/audio_effects.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/audio_effects_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/audio_effects_config.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/audio_effects_config_stub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/audio_effects_config_stub.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/audio_policy_configuration.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/mixer_paths_sun_cdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/mixer_paths_sun_cdp.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/mixer_paths_sun_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/mixer_paths_sun_mtp.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/mixer_paths_sun_mtp_wsa883x_qmp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/mixer_paths_sun_mtp_wsa883x_qmp.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/mixer_paths_sun_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/mixer_paths_sun_qrd.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/mixer_paths_sun_qrd_sku2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/mixer_paths_sun_qrd_sku2.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/quasar_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/quasar_config.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/resourcemanager_sun_cdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/resourcemanager_sun_cdp.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/resourcemanager_sun_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/resourcemanager_sun_mtp.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/resourcemanager_sun_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/resourcemanager_sun_qrd.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun/resourcemanager_sun_qrd_sku2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/resourcemanager_sun_qrd_sku2.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/audio/sku_sun_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun_qssi/audio_policy_configuration.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/audio/vendor_audio_interfaces.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/vendor_audio_interfaces.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/bpf/qmsUidStats.o:$(TARGET_COPY_OUT_VENDOR)/etc/bpf/qmsUidStats.o \
     vendor/lenovo/elden/proprietary/vendor/etc/camera/10_0.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/10_0.jpg \
     vendor/lenovo/elden/proprietary/vendor/etc/camera/10_180.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/10_180.jpg \
     vendor/lenovo/elden/proprietary/vendor/etc/camera/10_270.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/10_270.jpg \
@@ -520,6 +533,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/camera/pandora/vig.mslut:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pandora/vig.mslut \
     vendor/lenovo/elden/proprietary/vendor/etc/camera/pandora/yecan.mslut:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pandora/yecan.mslut \
     vendor/lenovo/elden/proprietary/vendor/etc/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/lenovo/elden/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/lenovo/elden/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
@@ -556,6 +570,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/data/nicm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/nicm_config.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/display/DPU1010.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1010.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/display/DPU10__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU10__.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/display/DPU11__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU11__.xml \
@@ -632,12 +647,16 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.bluetooth@aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@aidl-service-qti.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-spu-qti.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/audiohalservice_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiohalservice_qti.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.weaver-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.weaver-service-spu-qti.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/dms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dms-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/dvs-aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dvs-aidl-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/hw/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.rc \
@@ -648,6 +667,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/init.qlm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qlm-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
@@ -664,42 +684,61 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/init/qguard.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qguard.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/qvrd_vndr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qvrd_vndr.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/qwesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qwesd.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/snapdragon_services.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/snapdragon_services.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/sxrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sxrd.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-default-service-dax.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.dolby.media.c2-service-vision.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-service-vision.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.battery-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.battery-service.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.display-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.display-service.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.factory-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.factory-service.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.hyperschedule-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.hyperschedule-service.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.keyboard-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.keyboard-service.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.misc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.misc-service.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.performance-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.performance-service.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.touchscreen-service.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.usb.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qsap.location.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.location.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qsap.qapeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.qapeservice.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qsap.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.sensors.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.MemHal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.MemHal-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.alarm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore-service.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.allocator-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.display.color-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.color-service.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.display.demura-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.demura-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.dsp-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp-service.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.lights.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.lights.service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf2-hal-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.secureprocessor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.secureprocessor.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.vibrator.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator.service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.vibrator_dual@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator_dual@1.0-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.psiclient@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.psiclient@1.0-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.smp2p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.smp2p.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.syshealthmon-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.syshealthmon-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/xrcommservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/xrcommservice.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/xrcommservicehal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/xrcommservicehal.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/lm/LightningLaunchesFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/LightningLaunchesFeature.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/lm/PreKillFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PreKillFeature.xml \
@@ -713,14 +752,23 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/lm/prekill/prekill_4GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_4GB.data \
     vendor/lenovo/elden/proprietary/vendor/etc/lm/prekill/prekill_6GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_6GB.data \
     vendor/lenovo/elden/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/media_codecs_performance_sun.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_sun.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/media_codecs_performance_sun_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_sun_vendor.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/media_codecs_sun.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_sun.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/media_codecs_sun_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_sun_vendor.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/media_profiles_sun.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_sun.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/media_sun/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_sun/video_system_specs.json \
+    vendor/lenovo/elden/proprietary/vendor/etc/mem_logger_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mem_logger_config.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/models/acd/environment.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/environment.eai \
     vendor/lenovo/elden/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
@@ -741,6 +789,38 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/perf/targetsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetsysnodesconfigs.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/perf/testcommonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testcommonresourceconfigs.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/perf/testtargetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testtargetresourceconfigs.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-1.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_1.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.vulkan.version-1_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_3.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/sku_sun/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_sun/android.hardware.sensor.accelerometer.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/sku_sun/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_sun/android.hardware.sensor.compass.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/sku_sun/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_sun/android.hardware.sensor.gyroscope.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/sku_sun/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_sun/android.hardware.sensor.light.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/sku_sun/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_sun/android.hardware.sensor.proximity.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/sku_sun/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_sun/android.hardware.sensor.stepcounter.xml \
+    vendor/lenovo/elden/proprietary/vendor/etc/permissions/sku_sun/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_sun/android.hardware.sensor.stepdetector.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/lenovo/elden/proprietary/vendor/etc/pwr/CameraPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/CameraPowerOptFeature.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/pwr/GamePowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/GamePowerOptFeature.xml \
@@ -749,6 +829,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/pwr/PowerFeatureConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PowerFeatureConfig.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/pwr/VideoPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/VideoPowerOptFeature.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/qguard.json:$(TARGET_COPY_OUT_VENDOR)/etc/qguard.json \
+    vendor/lenovo/elden/proprietary/vendor/etc/qspa/nsp_disabled.rc:$(TARGET_COPY_OUT_VENDOR)/etc/qspa/nsp_disabled.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua.txt \
     vendor/lenovo/elden/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua_6dof_config.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua_qvr_3dof_tracker_config.txt \
@@ -759,23 +840,31 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/qvr/qvr_usb_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_usb_device_list.txt \
     vendor/lenovo/elden/proprietary/vendor/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvrservice_config.txt \
     vendor/lenovo/elden/proprietary/vendor/etc/qvr/xrcommconfig.json:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/xrcommconfig.json \
+    vendor/lenovo/elden/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
+    vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm64.policy \
+    vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qesdksec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdksec.policy \
+    vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
+    vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qsap_dcfd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_dcfd.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qsap_qapeservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_qapeservice.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qsap_sensors.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_sensors.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qsap_voiceui.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_voiceui.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
+    vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/sxr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/sxr@2.0.policy \
+    vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/syshealthmon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/syshealthmon.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
+    vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/xrcommhald@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/xrcommhald@2.0.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/sensors/config/bonito_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_bu52053nvx_0.json \
     vendor/lenovo/elden/proprietary/vendor/etc/sensors/config/bonito_ccd_base.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_ccd_base.json \
     vendor/lenovo/elden/proprietary/vendor/etc/sensors/config/bonito_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_default_sensors.json \
@@ -919,9 +1008,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/sensors/javalibs/odpmanagerlib-aar:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/javalibs/odpmanagerlib-aar \
     vendor/lenovo/elden/proprietary/vendor/etc/sensors/sns_odp_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_odp_config \
     vendor/lenovo/elden/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
-    vendor/lenovo/elden/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/lenovo/elden/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
+    vendor/lenovo/elden/proprietary/vendor/etc/stub_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/stub_audio_policy_configuration.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/lenovo/elden/proprietary/vendor/etc/thermal-engine_battery_0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_battery_0.conf \
     vendor/lenovo/elden/proprietary/vendor/etc/thermal-engine_battery_1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_battery_1.conf \
@@ -948,7 +1037,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/wifi/peach/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/peach/WCNSS_qcom_cfg.ini \
     vendor/lenovo/elden/proprietary/vendor/etc/wifi/peach_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/peach_v2/WCNSS_qcom_cfg.ini \
     vendor/lenovo/elden/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
-    vendor/lenovo/elden/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/lenovo/elden/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/lenovo/elden/proprietary/vendor/firmware/100_Haptic_Right_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/100_Haptic_Right_RTP.bin \
     vendor/lenovo/elden/proprietary/vendor/firmware/101_Haptic_Right_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/101_Haptic_Right_RTP.bin \
@@ -1178,7 +1266,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/firmware/Ding_RTP_23.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Ding_RTP_23.bin \
     vendor/lenovo/elden/proprietary/vendor/firmware/Dreams_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Dreams_RTP.bin \
     vendor/lenovo/elden/proprietary/vendor/firmware/MaLing1_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/MaLing1_RTP.bin \
-    vendor/lenovo/elden/proprietary/vendor/firmware/SAVONA_V8_TLC_512Gb_UFS41_P05_FW00.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SAVONA_V8_TLC_512Gb_UFS41_P05_FW00.bin \
+    vendor/lenovo/elden/proprietary/vendor/firmware/SAVONA_V8_TLC_1Tb_UFS41_GENERAL_P20_FW00.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SAVONA_V8_TLC_1Tb_UFS41_GENERAL_P20_FW00.bin \
+    vendor/lenovo/elden/proprietary/vendor/firmware/SAVONA_V8_TLC_256Gb_UFS41_GENERAL_P20_FW00.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SAVONA_V8_TLC_256Gb_UFS41_GENERAL_P20_FW00.bin \
+    vendor/lenovo/elden/proprietary/vendor/firmware/SAVONA_V8_TLC_512Gb_UFS41_GENERAL_P20_FW00.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SAVONA_V8_TLC_512Gb_UFS41_GENERAL_P20_FW00.bin \
     vendor/lenovo/elden/proprietary/vendor/firmware/Stars2_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Stars2_RTP.bin \
     vendor/lenovo/elden/proprietary/vendor/firmware/TribalLangua_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/TribalLangua_RTP.bin \
     vendor/lenovo/elden/proprietary/vendor/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic.bin \
@@ -1206,6 +1296,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
     vendor/lenovo/elden/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
     vendor/lenovo/elden/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
+    vendor/lenovo/elden/proprietary/vendor/firmware/ffu_config.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/ffu_config.txt \
     vendor/lenovo/elden/proprietary/vendor/firmware/gen70900_aqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen70900_aqe.fw \
     vendor/lenovo/elden/proprietary/vendor/firmware/gen70900_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen70900_sqe.fw \
     vendor/lenovo/elden/proprietary/vendor/firmware/gen70900_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen70900_zap.mbn \
@@ -1452,10 +1543,39 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/lib64/camera/imx688_6.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx688_6.pb \
     vendor/lenovo/elden/proprietary/vendor/lib64/camera/ov32c4c_4.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/ov32c4c_4.pb \
     vendor/lenovo/elden/proprietary/vendor/lib64/camera/ov32c4c_4_sm8735.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/ov32c4c_4_sm8735.pb \
-    vendor/lenovo/elden/proprietary/vendor/lib64/camera/qfdserviceconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/qfdserviceconfig.bin
+    vendor/lenovo/elden/proprietary/vendor/lib64/camera/qfdserviceconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/qfdserviceconfig.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1nrt430.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1nrt430.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1nrt43180.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1nrt43180.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1nrt43270.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1nrt43270.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1nrt4390.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1nrt4390.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1rt1690.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rt1690.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1rt169180.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rt169180.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1rt169270.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rt169270.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1rt16990.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rt16990.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1rt430.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rt430.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1rt43180.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rt43180.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1rt43270.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rt43270.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1rt4390.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rt4390.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1rtlp1690.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rtlp1690.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1rtlp169270.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rtlp169270.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1rtlp430.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rtlp430.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn1rtlp43270.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rtlp43270.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn2all.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn2all.bin \
+    vendor/lenovo/elden/proprietary/vendor/lib64/qsn3all.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn3all.bin
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
+    android.hardware.audio.core-V2-ndk_prebuilt \
+    android.hardware.audio.core.sounddose-V2-ndk_prebuilt \
+    android.hardware.bluetooth.audio-V4-ndk_prebuilt \
+    android.hardware.common-V2-ndk_platform_prebuilt \
+    android.hardware.graphics.allocator-V1-ndk_prebuilt \
+    android.hardware.graphics.common-V5-ndk_prebuilt \
+    android.hardware.graphics.composer3-V3-ndk_prebuilt \
+    android.hardware.security.keymint-V2-ndk_prebuilt \
+    android.hardware.security.sharedsecret-V2-ndk_prebuilt \
+    android.media.audio.common.types-V2-ndk_prebuilt \
+    android.media.audio.common.types-V3-ndk_prebuilt \
     btaudio_offload_if \
     c2.dolby.client \
     c2.dolby.hevc.dec \
@@ -1658,6 +1778,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
     com.qualcomm.qti.imscmservice@2.2 \
+    com.qualcomm.qti.mcx.usecase.extension \
     com.qualcomm.qti.uceservice@2.0 \
     com.qualcomm.qti.uceservice@2.1 \
     com.qualcomm.qti.uceservice@2.2 \
@@ -1675,13 +1796,19 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@aidl-impl-qti \
     audio.bluetooth_qti.default \
+    libQnnHtp \
+    libQnnHtpV79Skel \
+    libQnnHtpV79Stub \
+    libQnnSystem \
     camera.qcom.sm8750 \
     camera.qcom \
+    com.qti.chi.offline \
     com.qti.chi.override \
     libaudiocorehal.default \
     libaudiocorehal.qti \
     libaudioeffecthal.qti \
     libqtigatekeeper \
+    libspuqtigatekeeper \
     mbedtls_qti \
     sensors.dynamic_sensor_hal \
     vendor.qti.hardware.alarm-impl \
@@ -1695,6 +1822,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.servicetrackeraidl-impl \
+    vendor.qti.hardware.soter-impl \
     vibrator.default \
     vulkan.adreno \
     lib-imscommon \
@@ -1712,6 +1840,8 @@ PRODUCT_PACKAGES += \
     libApeSwDec \
     libCB \
     libCneAppJni \
+    libDcfHalFramework \
+    libDcfHalLogger \
     libDspIOProxy_stub \
     libEvrcSwCodec \
     libFileMux_proprietary \
@@ -1720,12 +1850,15 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
+    libLenovoNvram \
     libMapService \
     libOpenCL \
     libOpenCL_adreno \
     libPeripheralStateUtils \
     libQSEEComAPI \
     libQcelp13SwCodec \
+    libQnnGpu \
+    libQnnHtpPrepare \
     libScenescape \
     libSensorsInterface \
     libStereoRectifyWrapper \
@@ -1737,17 +1870,22 @@ PRODUCT_PACKAGES += \
     libaacvibrator \
     libadm \
     libadreno_app_profiles \
+    libadreno_compiler_cl \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
+    libagmmixer \
     libaodoptfeature \
     libapengine \
     libappclassifier \
     libar-pal \
     libarcsoft_qnnhtp \
     libarcsoft_video_superportrait \
+    libarmemlog \
     libaudio_log_utils \
     libaudioplatformconverter.qti \
+    libaudioserviceexampleimpl \
+    libaudioutils_prebuilt \
     libbacklight-calib \
     libbitmlengine \
     libbitmlenginev2 \
@@ -1756,6 +1894,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session_qti_2_1 \
     libbt-hidlclient \
     libbtnv \
+    libcacertclient \
     libcamerapoweroptfeature \
     libcamxcommonutils \
     libcamxcoreutils \
@@ -1804,6 +1943,7 @@ PRODUCT_PACKAGES += \
     libcv_common \
     libdapparamstorage \
     libdeccfg \
+    libdemura_oem_plugin \
     libdepthcomputation \
     libdiag \
     libdigital-dimming \
@@ -1846,11 +1986,15 @@ PRODUCT_PACKAGES += \
     libhdr_backlight_adapter \
     libhdr_tm \
     libhistogram \
+    libhotword_intf \
     libhwliqinterface2 \
     libhwlispcffdump \
+    libiccprofile \
     libidl \
     libintervmipc \
+    libipebpsstriping \
     libisphwsetting \
+    libjnihelper \
     libkcl \
     libkernelmanager \
     libkeymasterdeviceutils \
@@ -1859,6 +2003,7 @@ PRODUCT_PACKAGES += \
     liblearningmodule \
     liblightninglaunches \
     liblistensoundmodel2vendor \
+    liblistensoundmodelaidl \
     libllvm-glnext \
     libllvm-qcom \
     libllvm-qgl \
@@ -1872,6 +2017,7 @@ PRODUCT_PACKAGES += \
     libmemutils \
     libmeters-ns \
     libmeters \
+    libmfGhostDetection \
     libminkdescriptor \
     libminksocket_vendor \
     libmm-hdcpmgr \
@@ -1896,6 +2042,7 @@ PRODUCT_PACKAGES += \
     libnicm_utils \
     libnicm_vh \
     liboemcrypto \
+    libofestriping \
     liboffscreenpoweroptfeature \
     libois_channel_stub \
     liboischannel \
@@ -1906,7 +2053,10 @@ PRODUCT_PACKAGES += \
     libops \
     libos \
     libpasrutils \
+    libpdmapper \
+    libpdnotifier \
     libperfconfig \
+    libperfdb \
     libperfioctl \
     libperipheral_client \
     libpowercallback \
@@ -1918,7 +2068,9 @@ PRODUCT_PACKAGES += \
     libproj_sot \
     libpsmoptfeature \
     libq-perflog \
+    libqape_oem_ext \
     libqapesdk \
+    libqasr \
     libqc2audio_base \
     libqc2audio_basecodec \
     libqc2audio_core \
@@ -1956,6 +2108,8 @@ PRODUCT_PACKAGES += \
     libqesdk2_0 \
     libqesdk_manager \
     libqesdoem_query_sys \
+    libqfdadapter \
+    libqfdservice \
     libqisl \
     libqmi \
     libqmi_cci \
@@ -1967,27 +2121,41 @@ PRODUCT_PACKAGES += \
     libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
+    libqms \
     libqrtr \
     libqrtrclient \
     libqseed3 \
+    libqsegnet \
     libqsh \
+    libqsh_ble_pb \
     libqshcamera \
     libqsocket \
     libqspm-mem-utils-vendor \
+    libqti-MemHal-client \
+    libqti-appclassifier \
+    libqti-jankrescue \
+    libqti-lllite \
     libqti-perfd-client \
     libqti-perfd \
     libqti-perfextn-intf \
     libqti-qesdk-secure \
     libqti-s3tf \
     libqti-scenariod \
+    libqti-sslite \
     libqti-util \
     libqti-utils \
     libqtigefar \
+    libqtiidentitycredential \
     libqtikeymaster4 \
     libqtikeymint \
     libqtivibratoreffect \
     libqtivibratoreffectoffload \
+    libqvr_cam_cdsp_driver_stub \
+    libqvr_cdsp_driver_stub \
+    libqvr_eyetracking_plugin \
+    libqvrcamera_client.qti \
     libqvrcameraplayback \
+    libqvrservice \
     libqvrservice_client.qti \
     librcc \
     librcmask \
@@ -1998,9 +2166,11 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdedrm \
+    libsdm-brightnessaware-parser \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
+    libsdmclient \
     libsdmcore \
     libsdmdal \
     libsdmextension \
@@ -2015,6 +2185,7 @@ PRODUCT_PACKAGES += \
     libsilkyscrolls \
     libsiminputgenutil \
     libskewknob \
+    libsmemlog \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
     libsns_device_mode_stub \
@@ -2031,6 +2202,10 @@ PRODUCT_PACKAGES += \
     libspcom \
     libspectre \
     libspl \
+    libspukeymint \
+    libspukeymintdeviceutils \
+    libspukeymintprovision \
+    libspukeymintutils \
     libssc_default_listener \
     libssd \
     libstandbyfeature \
@@ -2040,15 +2215,19 @@ PRODUCT_PACKAGES += \
     libsxrservice \
     libsynx \
     libsysmon_cdsp_skel \
-    libtensorflowlite_c \
+    libtaautoload \
+    libtensorflowlite_c_prebuilt \
     libtestutils \
     libthermalclient \
     libthreadutils \
     libtime_genoff \
     libtinyxml2_1 \
+    libtinyxml2_prebuilt \
+    libtracker_6dof_impl \
     libtrustedapploader \
     libubifocus \
     libubwcp \
+    libvibratorutils_prebuilt \
     libvideooptfeature \
     libvideotxr \
     libvideoutils \
@@ -2087,6 +2266,22 @@ PRODUCT_PACKAGES += \
     libwqe \
     libxml \
     libxpan_wifi_hal \
+    libxrcommconnection \
+    libxrcommcoreutils \
+    libxrcommdiscoveryservice \
+    libxrcommdiscoveryservice2 \
+    libxrcommdiscoveryservice2_client \
+    libxrcommdiscoveryservice_client \
+    libxrcommdpqaservice \
+    libxrcommdpqaservice_client \
+    libxrcommnetworkservice \
+    libxrcommnetworkservice_client \
+    libxrcommservice_client \
+    libxrcommtimerservice \
+    libxrcommtimerservice_client \
+    libxrcommtrafficshaperservice \
+    libxrcommtrafficshaperservice_client \
+    libxrcommwpacliwrapper \
     qti.video.utils.videobufferlayout \
     libVppAisQnnHtp \
     libVppFrcQnnHtp \
@@ -2115,17 +2310,28 @@ PRODUCT_PACKAGES += \
     libvpt_action_recognition \
     libworker_pool \
     sensors.qsh \
+    libaudiopreprocessing \
+    libbundleaidl \
     libbundlewrapper \
     libdlbvolaidl \
     libdownmix \
+    libdownmixaidl \
+    libdynamicsprocessingaidl \
+    libdynproc \
+    libeffectproxy \
+    libhapticgenerator \
     libldnhncr \
+    libloudnessenhanceraidl \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libquasar \
+    libreverbaidl \
+    libreverbwrapper \
     libswdapaidl \
     libswgamedapaidl \
     libvisualizer \
+    libvisualizeraidl \
     libvolumelistener \
     vendor.aac.hardware.richtap.vibrator-V1-ndk_platform \
     vendor.display.color@1.0 \
@@ -2138,6 +2344,15 @@ PRODUCT_PACKAGES += \
     vendor.dolby.dms-V1-ndk \
     vendor.dolby.dvs-V1-ndk \
     vendor.dolby.hardware.dms@2.0 \
+    vendor.lenovo.hardware.battery-V5-ndk \
+    vendor.lenovo.hardware.display-V1-ndk \
+    vendor.lenovo.hardware.factory-V2-ndk \
+    vendor.lenovo.hardware.hyperschedule-V2-ndk \
+    vendor.lenovo.hardware.keyboard-V1-ndk \
+    vendor.lenovo.hardware.misc-V1-ndk \
+    vendor.lenovo.hardware.performance-V1-ndk \
+    vendor.lenovo.hardware.touchscreen-V3-ndk \
+    vendor.lenovo.hardware.usb-V1-ndk \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
@@ -2145,6 +2360,7 @@ PRODUCT_PACKAGES += \
     vendor.libmwqemiptablemgr \
     vendor.qti.ImsRtpService-V1-ndk-vendor \
     vendor.qti.ImsRtpService-aidl-Impl \
+    vendor.qti.MemHal-V1-ndk \
     vendor.qti.data.factoryservice-V1-ndk \
     vendor.qti.data.mwqemaidlservice-V1-ndk \
     vendor.qti.data.slm@1.0 \
@@ -2179,6 +2395,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.lceaidlservice-V1-ndk \
     vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
+    vendor.qti.hardware.display.allocator@4.0_prebuilt \
+    vendor.qti.hardware.display.composer3-V1-ndk_prebuilt \
     vendor.qti.hardware.display.snapalloc-impl \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dsp-V1-ndk \
@@ -2190,6 +2408,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
     vendor.qti.hardware.perf2-V1-ndk \
     vendor.qti.hardware.power.powermodule-V1-ndk \
+    vendor.qti.hardware.qasr-V2-ndk \
     vendor.qti.hardware.qconfig-V1-ndk \
     vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qseecom-V1-ndk \
@@ -2210,11 +2429,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.secureprocessor.config-V1-ndk \
     vendor.qti.hardware.secureprocessor.device-V1-ndk \
     vendor.qti.hardware.sensorscalibrate-V1-ndk \
+    vendor.qti.hardware.soter-V1-ndk \
     vendor.qti.hardware.trustedui-V1-ndk \
-    vendor.qti.hardware.vibrator.impl \
     vendor.qti.hardware.vibratorCL.impl \
-    vendor.qti.hardware.vibratorOL.impl \
-    vendor.qti.hardware.vibratorSel.impl \
     vendor.qti.hardware.vibrator_dual.device-V1-ndk \
     vendor.qti.hardware.vpp-V1-ndk \
     vendor.qti.hardware.vpp@1.1 \
@@ -2259,22 +2476,23 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-impl \
     vendor.qti.snapdragonServices-V1-ndk \
     vendor.qti.snapdragonServices.qape-V1-ndk \
-    libDspIOProxy_skel \
-    libQnnHtpV79 \
-    libQnnHtpV79Skel \
-    libadsp_jpege_skel \
-    libarc_htp_driver_skel \
-    libdsp_streamer_binning \
-    libdsp_streamer_qvrcam_receiver \
-    libeye_tracking_dsp_sample_skel \
-    libhalide_hexagon_remote_skel \
-    libhme_dsp_skel \
-    libmctfengine_skel \
-    libmlawbpostproc_dsp_skel \
-    libqvr_3dof_tracker_skel \
-    libqvr_cam_dsp_driver_skel \
-    libqvr_dsp_driver_skel \
-    libtracker_6dof_skel_8450 \
+    vendor.qti.syshealthmon-V1-ndk \
+    vendor_lib_rfsa_adsp_libDspIOProxy_skel_so \
+    vendor_lib_rfsa_adsp_libQnnHtpV79_so \
+    vendor_lib_rfsa_adsp_libQnnHtpV79Skel_so \
+    vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
+    vendor_lib_rfsa_adsp_libarc_htp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_qvrcam_receiver_so \
+    vendor_lib_rfsa_adsp_libeye_tracking_dsp_sample_skel_so \
+    vendor_lib_rfsa_adsp_libhalide_hexagon_remote_skel_so \
+    vendor_lib_rfsa_adsp_libhme_dsp_skel_so \
+    vendor_lib_rfsa_adsp_libmctfengine_skel_so \
+    vendor_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_3dof_tracker_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libtracker_6dof_skel_8450_so \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
@@ -2284,7 +2502,7 @@ PRODUCT_PACKAGES += \
     libimsmedia_jni \
     libmmosal \
     libmmparser_lite \
-    vendor.qti.ImsRtpService-V1-ndk \
+    vendor.qti.ImsRtpService-V2-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.ims.datachannelservice-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
@@ -2312,80 +2530,128 @@ PRODUCT_PACKAGES += \
     ImsRtpService-aidl.xml \
     android.hardware.drm-service.xml \
     android.hardware.security.keymint-service-qti.xml \
-    audioeffectservice_qti.xml \
+    bluetooth-finder.xml \
+    bluetooth_hci.xml \
+    bluetooth_sar.xml \
+    bt_lmp_event-saidl.xml \
+    bttpi-saidl.xml \
     c2_manifest_vendor.xml \
     c2_manifest_vendor_audio.xml \
+    cacert-saidl.xml \
+    datafactoryservice-saidl.xml \
+    dms-service.xml \
     dpm-saidl.xml \
     dvs-aidl-service.xml \
     imsdcservice-saidl.xml \
-    manifest_audiocorehal_default.xml \
+    manifest_btaudiocoreservices_qti.xml \
+    manifest_identity_credential.xml \
+    mwqem-saidl.xml \
+    qasr_vintf.xml \
     qesdk-manager.xml \
+    qms-saidl.xml \
+    snapdragon_services.xml \
     vendor.dolby.media.c2-default-service-dax.xml \
+    vendor.lenovo.hardware.battery-service.xml \
+    vendor.lenovo.hardware.display-service.xml \
+    vendor.lenovo.hardware.factory-service.xml \
+    vendor.lenovo.hardware.hyperschedule-service.xml \
+    vendor.lenovo.hardware.keyboard-service.xml \
+    vendor.lenovo.hardware.misc-service.xml \
+    vendor.lenovo.hardware.performance-service.xml \
+    vendor.lenovo.hardware.touchscreen-service.xml \
+    vendor.lenovo.hardware.usb.xml \
+    vendor.qti.MemHal.xml \
     vendor.qti.camera.aon-impl.xml \
     vendor.qti.camera.offlinecamera-impl.xml \
     vendor.qti.camera.provider.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.hardware.alarm.xml \
+    vendor.qti.hardware.bluetooth.xpanprovider.xml \
     vendor.qti.hardware.capabilityconfigstore-service.xml \
-    vendor.qti.hardware.display.allocator-service.xml \
-    vendor.qti.hardware.display.demura-service.xml \
     vendor.qti.hardware.dsp-service.xml \
     vendor.qti.hardware.embmssl.xml \
+    vendor.qti.hardware.lights.service.xml \
     vendor.qti.hardware.perf2.xml \
     vendor.qti.hardware.power.powermodule.xml \
+    vendor.qti.hardware.qconfig-service.xml \
     vendor.qti.hardware.qseecom@1.0-service.xml \
+    vendor.qti.hardware.qxr-service.xml \
     vendor.qti.hardware.secureprocessor.xml \
     vendor.qti.hardware.sensorscalibrate.xml \
     vendor.qti.hardware.servicetrackeraidl-service.xml \
+    vendor.qti.hardware.soter-service.xml \
     vendor.qti.hardware.trustedui-aidl-service.xml \
-    vendor.qti.hardware.vibrator.service.xml \
     vendor.qti.hardware.vibrator_dual.xml \
     vendor.qti.hardware.vpp-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.qti.ims.factoryaidlservice.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
+    vendor.qti.syshealthmon-service.xml \
+    vendor.qti.qesdsys.service.xml \
+    GPTEE_Sample_client \
     adpl \
     adsprpcd \
     cdsprpcd \
+    check_keymaster \
     cnd \
     cnss-daemon \
+    cnss_diag \
+    coresight_reset_source_sink \
     diag-router \
+    diag_mdlog \
     dspservice \
     embmsslServer \
+    fm_qsoc_patches \
     hdcp1prov \
     hdcp2p2prov \
     android.hardware.bluetooth@aidl-service-qti \
     android.hardware.gatekeeper-service-qti \
+    android.hardware.gatekeeper-service-spu-qti \
+    android.hardware.identity-service-qti \
     android.hardware.security.keymint-service-qti \
-    audiohalservice.qti \
+    android.hardware.security.keymint-service-spu-qti \
+    android.hardware.weaver-service-spu-qti \
     dvs-aidl-service \
+    qvrservice \
     sxrservice \
     vendor.dolby.dms.service \
     vendor.dolby.media.c2-default-service-dax \
     vendor.dolby.media.c2-service-vision \
+    vendor.lenovo.hardware.battery-service \
+    vendor.lenovo.hardware.display-service \
+    vendor.lenovo.hardware.factory-service \
+    vendor.lenovo.hardware.hyperschedule-service \
+    vendor.lenovo.hardware.keyboard-service \
+    vendor.lenovo.hardware.misc-service \
+    vendor.lenovo.hardware.performance-service \
+    vendor.lenovo.hardware.touchscreen-service \
+    vendor.lenovo.hardware.usb-service \
+    vendor.qti.MemHal-service \
     vendor.qti.camera.provider-service_64 \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.capabilityconfigstore-service \
-    vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.color-service \
     vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.demura-service \
+    vendor.qti.hardware.lights.service \
     vendor.qti.hardware.perf2-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.secureprocessor \
     vendor.qti.hardware.sensorscalibrate-service \
     vendor.qti.hardware.servicetrackeraidl-service \
+    vendor.qti.hardware.soter-service \
     vendor.qti.hardware.trustedui-aidl-service-qti \
-    vendor.qti.hardware.vibrator.service \
     vendor.qti.hardware.vibrator_dual@1.0-service \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.qti.psiclient@1.0-service \
+    xrcommservice \
+    xrcommservicehal \
     ims-dataservice-daemon \
     ims_rtp_daemon \
     imsdaemon \
     init.class_main \
+    init.crda \
     init.kernel.init_boot-memory \
     init.kernel.post_boot-memory \
     init.kernel.post_boot-sun \
@@ -2393,17 +2659,25 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-sun_6_0 \
     init.kernel.post_boot-sun_default_6_2 \
     init.kernel.post_boot \
+    init.qcom.cabl.off \
+    init.qcom.cabl \
     init.qcom.class_core \
     init.qcom.early_boot \
     init.qcom.post_boot \
+    init.qcom.sdio \
     init.qcom.sensors \
     init.qcom \
     init.qti.kernel \
     init.qti.media \
     init.qti.qcv \
     init.qti.write \
+    init.qvrd.usb_mtu_set \
+    init.xrcommd.usb_mtu_set \
     irsc_util \
     loadalgo \
+    nicmd \
+    nqnfcinfo \
+    pd-mapper \
     pm-proxy \
     pm-service \
     pm_ioctl_app \
@@ -2414,13 +2688,18 @@ PRODUCT_PACKAGES += \
     qcc-vendor \
     qdcmss \
     qesdk-manager \
+    qesdk-secmanager \
     qguard \
-    qmi_test_mt_client_init_instance \
+    qlm-service \
     qmipriod \
+    qms \
     qrtr-cfg \
     qrtr-lookup \
     qrtr-ns \
+    qsap_dcfd \
+    qsap_qapeservice \
     qsap_sensors \
+    qsap_voiceui \
     qseecomd \
     qti \
     qvrcameratest \
@@ -2430,7 +2709,9 @@ PRODUCT_PACKAGES += \
     qwesd \
     sensors.qti \
     shsusrd \
+    snapdragon_services \
     sscrpcd \
+    ssgqmigd \
     ssgqmigd64 \
     ssgtzd \
     ssr_diag \
@@ -2443,7 +2724,9 @@ PRODUCT_PACKAGES += \
     trusteduilistener \
     ubwcconvert \
     vendor.dpmd \
+    vendor.qti.hardware.soter-provision \
     vendor.qti.qspmhal-service \
+    vendor.qti.syshealthmon-service \
     vendor_modprobe \
     vmmgr \
     vppservice \

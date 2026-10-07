@@ -1910,7 +1910,7 @@
             <stream_config>
                 <name>CUSTOM_VOICE_UI</name>
                 <!-- NOTE: Customer need to replace with their own uuid and match with sound model -->
-                <param vendor_uuid="c51c508a-ee1b-11ec-8ea0-0242ac120002" />
+                <param vendor_uuid="dc90a99a-0aba-500e-81b5-79830d49d398" />
                 <param interface_plugin_lib="libcustomva_intf.so" />
                 <param merge_first_stage_sound_models="false" />
                 <!-- Profile specific data which the algorithm can support -->
@@ -1927,9 +1927,9 @@
                 <!-- Module output channels -->
                 <param out_channels="1" />
                 <operating_modes>
-                    <low_power capture_profile_handset="DUAL_MIC_16KHZ_16BIT_CUSTOM_NS" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_CUSTOM_NS" />
-                    <high_performance capture_profile_handset="DUAL_MIC_48KHZ_16BIT_CUSTOM_ECNS" capture_profile_headset="SINGLE_MIC_48KHZ_16BIT_HEADSET_CUSTOM_ECNS" />
-                    <high_performance_and_charging capture_profile_handset="DUAL_MIC_48KHZ_16BIT_CUSTOM_ECNS" capture_profile_headset="SINGLE_MIC_48KHZ_16BIT_HEADSET_CUSTOM_ECNS" />
+                    <low_power capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_RAW_LPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_CUSTOM_NS" />
+                    <high_performance capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_CUSTOM_ECNS" capture_profile_headset="SINGLE_MIC_48KHZ_16BIT_HEADSET_CUSTOM_ECNS" />
+                    <high_performance_and_charging capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_CUSTOM_ECNS" capture_profile_headset="SINGLE_MIC_48KHZ_16BIT_HEADSET_CUSTOM_ECNS" />
                 </operating_modes>
                 <sound_model_info>
                     <first_stage_module_params>

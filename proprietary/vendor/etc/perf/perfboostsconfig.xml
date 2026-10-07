@@ -380,7 +380,7 @@
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
         <Config
-            Id="0x00001083" Enable="true" Timeout="400" Target="sun"
+            Id="0x00001083" Enable="true" Timeout="600" Target="sun"
             Resources="0x40804000, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000, 0xFFF, 0x40800200, 0xFFF, 0x4280C000, 832" />
         <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
@@ -637,7 +637,7 @@
             Resources="0x40C00000, 2, 0x4080C000, 1056000, 0x40808000, 787000, 0x40814000, 633000,
                        0x41848000, 0xE3C88" />
         <Config
-            Id="0x00001080" Type="3" Enable="true" Target="sun,tuna" Fps="120, 144, 180, 240"
+            Id="0x00001080" Type="3" Enable="true" Target="sun,tuna" Fps="60, 120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1300000, 0x4080C200, 1300000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1662,11 +1662,11 @@
 
         <Config
                 Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="sun" Fps="120"
-                Resources="0x40800000, 1500, 0x4280C000, 680" />
+                Resources="0x40800000, 1500, 0x4280C000, 734" />
 
         <Config
                 Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="sun" Fps="144"
-                Resources="0x40800000, 1500, 0x4280C000, 680" />
+                Resources="0x40800000, 1500, 0x4280C000, 832" />
 
         <Config
                 Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="sun" Fps="180"

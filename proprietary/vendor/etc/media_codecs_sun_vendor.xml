@@ -144,22 +144,24 @@
             <Limit name="performance-point-7680x4320" value="60" />
             <Limit name="performance-point-8192x4320" value="48" />
         </MediaCodec>
+        <!-- ELDENW code for ELDENW-1107 by zhanggr5 at 2025/09/01 start -->
         <MediaCodec name="c2.dolby.decoder.hevc.secure" type="video/dolby-vision" >
             <Limit name="size" min="96x96" max="4096x4096" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
-            <Limit name="block-count" range="36-34560" />
-            <Limit name="blocks-per-second" min="36" max="4147200" />
+            <Limit name="block-count" range="36-36864" />
+            <Limit name="blocks-per-second" min="36" max="2073600" />
             <Limit name="bitrate" range="1-40000000" />
-            <Limit name="frame-rate" range="1-120" />
+            <Limit name="frame-rate" range="1-60" />
             <Feature name="adaptive-playback" />
             <Feature name="dynamic-color-aspects" />
             <Feature name="secure-playback" required="true" />
             <Feature name="low-latency" />
             <Limit name="concurrent-instances" max="3" />
-            <Limit name="performance-point-3840x2160" value="120" />
-            <Limit name="performance-point-4096x2304" value="120" />
+            <Limit name="performance-point-3840x2160" value="60" />
+            <Limit name="performance-point-4096x2304" value="30" />
         </MediaCodec>
+        <!-- ELDENW code for ELDENW-1107 by zhanggr5 at 2025/09/01 end -->
         <MediaCodec name="c2.qti.avc.decoder" type="video/avc">
             <Alias name="OMX.qcom.video.decoder.avc"/>
             <Limit name="size" min="96x96" max="8192x8192" />
