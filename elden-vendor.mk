@@ -2564,7 +2564,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.camera.aon-impl.xml \
     vendor.qti.camera.offlinecamera-impl.xml \
     vendor.qti.camera.provider.xml \
-    vendor.qti.diag.hal.service.xml \
     vendor.qti.hardware.alarm.xml \
     vendor.qti.hardware.bluetooth.xpanprovider.xml \
     vendor.qti.hardware.capabilityconfigstore-service.xml \
@@ -2598,7 +2597,6 @@ PRODUCT_PACKAGES += \
     cnss-daemon \
     cnss_diag \
     coresight_reset_source_sink \
-    diag-router \
     diag_mdlog \
     dspservice \
     embmsslServer \

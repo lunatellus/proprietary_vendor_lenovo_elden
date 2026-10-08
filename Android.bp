@@ -29615,15 +29615,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "vendor.qti.diag.hal.service.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.qti.hardware.alarm.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.alarm.xml",
@@ -30090,37 +30081,6 @@ sh_binary {
     owner: "lenovo",
     src: "proprietary/vendor/bin/coresight_reset_source_sink.sh",
     filename: "coresight_reset_source_sink.sh",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "diag-router",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/diag-router",
-            ],
-            shared_libs: [
-                "libutils",
-                "libqrtr",
-                "liblog",
-                "libcutils",
-                "libavservices_minijail",
-                "libbinder_ndk",
-                "vendor.qti.diaghal-V1-ndk-vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
     soc_specific: true,
 }
 
