@@ -75,3 +75,4 @@ setpriority: 1
 socketpair: 1
 gettid: 1
 ppoll: 1
+lseek: 1
