@@ -29821,15 +29821,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "vendor.qti.qesdsys.service.xml",
-    owner: "lenovo",
-    src: "proprietary/system_ext/etc/vintf/manifest/vendor.qti.qesdsys.service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    system_ext_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "GPTEE_Sample_client",
     owner: "lenovo",

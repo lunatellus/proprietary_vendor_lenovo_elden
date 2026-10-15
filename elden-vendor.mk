@@ -2587,7 +2587,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
     vendor.qti.syshealthmon-service.xml \
-    vendor.qti.qesdsys.service.xml \
     GPTEE_Sample_client \
     adpl \
     adsprpcd \
