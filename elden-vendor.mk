@@ -728,7 +728,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.psiclient@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.psiclient@1.0-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.smp2p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.smp2p.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.syshealthmon-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.syshealthmon-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
@@ -856,7 +855,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/sxr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/sxr@2.0.policy \
-    vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/syshealthmon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/syshealthmon.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/lenovo/elden/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
@@ -2473,7 +2471,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-impl \
     vendor.qti.snapdragonServices-V1-ndk \
     vendor.qti.snapdragonServices.qape-V1-ndk \
-    vendor.qti.syshealthmon-V1-ndk \
     vendor_lib_rfsa_adsp_libDspIOProxy_skel_so \
     vendor_lib_rfsa_adsp_libQnnHtpV79_so \
     vendor_lib_rfsa_adsp_libQnnHtpV79Skel_so \
@@ -2583,7 +2580,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.factoryaidlservice.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
-    vendor.qti.syshealthmon-service.xml \
     GPTEE_Sample_client \
     adpl \
     adsprpcd \
@@ -2719,7 +2715,6 @@ PRODUCT_PACKAGES += \
     vendor.dpmd \
     vendor.qti.hardware.soter-provision \
     vendor.qti.qspmhal-service \
-    vendor.qti.syshealthmon-service \
     vendor_modprobe \
     vmmgr \
     vppservice \

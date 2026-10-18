@@ -28475,31 +28475,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.qti.syshealthmon-V1-ndk",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.syshealthmon-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 prebuilt_rfsa {
     name: "vendor_lib_rfsa_adsp_libDspIOProxy_skel_so",
     filename: "libDspIOProxy_skel.so",
@@ -29782,15 +29757,6 @@ prebuilt_etc_xml {
     name: "vendor.qti.qspmhal-service.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.qspmhal-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.qti.syshealthmon-service.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.syshealthmon-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -33570,38 +33536,6 @@ cc_prebuilt_binary {
                 "libavservices_minijail",
                 "libbase",
                 "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.qti.syshealthmon-service",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/vendor.qti.syshealthmon-service",
-            ],
-            shared_libs: [
-                "vendor.qti.syshealthmon-V1-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libqrtr",
-                "libavservices_minijail",
                 "libc++",
                 "libc",
                 "libm",
