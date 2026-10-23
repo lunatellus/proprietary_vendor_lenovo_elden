@@ -27286,31 +27286,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.vibrator_dual.device-V1-ndk",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.vibrator_dual.device-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.vpp-V1-ndk",
     owner: "lenovo",
     strip: {
@@ -29709,15 +29684,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "vendor.qti.hardware.vibrator_dual.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator_dual.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.qti.hardware.vpp-service.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vpp-service.xml",
@@ -31450,42 +31416,6 @@ cc_prebuilt_binary {
                 "vendor.qti.hardware.trustedui-V1-ndk",
                 "libTrustedUIAIDL",
                 "libTrustedInputAIDL",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.qti.hardware.vibrator_dual@1.0-service",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.hardware.vibrator_dual@1.0-service",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libcutils",
-                "libhidltransport",
-                "libsoc_helper",
-                "liblog",
-                "libhwbinder",
-                "libutils",
-                "libhardware",
-                "libbase",
-                "libbinder_ndk",
-                "vendor.qti.hardware.vibrator_dual.device-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",

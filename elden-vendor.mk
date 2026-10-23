@@ -721,7 +721,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.hardware.vibrator_dual@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator_dual@1.0-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qti.psiclient@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.psiclient@1.0-service.rc \
@@ -2427,7 +2426,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter-V1-ndk \
     vendor.qti.hardware.trustedui-V1-ndk \
     vendor.qti.hardware.vibratorCL.impl \
-    vendor.qti.hardware.vibrator_dual.device-V1-ndk \
     vendor.qti.hardware.vpp-V1-ndk \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
@@ -2573,7 +2571,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetrackeraidl-service.xml \
     vendor.qti.hardware.soter-service.xml \
     vendor.qti.hardware.trustedui-aidl-service.xml \
-    vendor.qti.hardware.vibrator_dual.xml \
     vendor.qti.hardware.vpp-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.qti.ims.factoryaidlservice.xml \
@@ -2630,7 +2627,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetrackeraidl-service \
     vendor.qti.hardware.soter-service \
     vendor.qti.hardware.trustedui-aidl-service-qti \
-    vendor.qti.hardware.vibrator_dual@1.0-service \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.qti.psiclient@1.0-service \
