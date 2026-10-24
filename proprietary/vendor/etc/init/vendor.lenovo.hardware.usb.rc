@@ -1,5 +1,0 @@
-service usb_hal_service /vendor/bin/hw/vendor.lenovo.hardware.usb-service
-    interface aidl vendor.lenovo.hardware.usb.IUsb/default
-    class hal
-    user system
-    group system

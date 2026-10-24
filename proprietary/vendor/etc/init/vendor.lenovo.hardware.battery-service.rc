@@ -1,4 +1,0 @@
-service battery_aidl_service /vendor/bin/hw/vendor.lenovo.hardware.battery-service
-    class hal
-    user root
-    group root

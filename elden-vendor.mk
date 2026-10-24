@@ -691,15 +691,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-default-service-dax.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.dolby.media.c2-service-vision.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-service-vision.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.battery-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.battery-service.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.display-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.display-service.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.factory-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.factory-service.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.hyperschedule-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.hyperschedule-service.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.keyboard-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.keyboard-service.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.misc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.misc-service.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.performance-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.performance-service.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.touchscreen-service.rc \
-    vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.lenovo.hardware.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.usb.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qsap.location.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.location.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qsap.qapeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.qapeservice.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/vendor.qsap.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.sensors.rc \
@@ -1557,17 +1548,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
-    android.hardware.audio.core-V2-ndk_prebuilt \
-    android.hardware.audio.core.sounddose-V2-ndk_prebuilt \
-    android.hardware.bluetooth.audio-V4-ndk_prebuilt \
-    android.hardware.common-V2-ndk_platform_prebuilt \
-    android.hardware.graphics.allocator-V1-ndk_prebuilt \
-    android.hardware.graphics.common-V5-ndk_prebuilt \
-    android.hardware.graphics.composer3-V3-ndk_prebuilt \
-    android.hardware.security.keymint-V2-ndk_prebuilt \
-    android.hardware.security.sharedsecret-V2-ndk_prebuilt \
-    android.media.audio.common.types-V2-ndk_prebuilt \
-    android.media.audio.common.types-V3-ndk_prebuilt \
+    android.hardware.graphics.allocator-V1-ndk_vendor \
+    android.hardware.security.sharedsecret-V2-ndk_vendor \
     btaudio_offload_if \
     c2.dolby.client \
     c2.dolby.hevc.dec \
@@ -1842,7 +1824,6 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libLenovoNvram \
     libMapService \
     libOpenCL \
     libOpenCL_adreno \
@@ -1877,7 +1858,6 @@ PRODUCT_PACKAGES += \
     libaudio_log_utils \
     libaudioplatformconverter.qti \
     libaudioserviceexampleimpl \
-    libaudioutils_prebuilt \
     libbacklight-calib \
     libbitmlengine \
     libbitmlenginev2 \
@@ -2196,7 +2176,6 @@ PRODUCT_PACKAGES += \
     libspl \
     libspukeymint \
     libspukeymintdeviceutils \
-    libspukeymintprovision \
     libspukeymintutils \
     libssc_default_listener \
     libssd \
@@ -2208,18 +2187,16 @@ PRODUCT_PACKAGES += \
     libsynx \
     libsysmon_cdsp_skel \
     libtaautoload \
-    libtensorflowlite_c_prebuilt \
+    libtensorflowlite_c_vendor \
     libtestutils \
     libthermalclient \
     libthreadutils \
     libtime_genoff \
     libtinyxml2_1 \
-    libtinyxml2_prebuilt \
     libtracker_6dof_impl \
     libtrustedapploader \
     libubifocus \
     libubwcp \
-    libvibratorutils_prebuilt \
     libvideooptfeature \
     libvideotxr \
     libvideoutils \
@@ -2311,7 +2288,6 @@ PRODUCT_PACKAGES += \
     libdynamicsprocessingaidl \
     libdynproc \
     libeffectproxy \
-    libhapticgenerator \
     libldnhncr \
     libloudnessenhanceraidl \
     libqcompostprocbundle \
@@ -2336,28 +2312,19 @@ PRODUCT_PACKAGES += \
     vendor.dolby.dms-V1-ndk \
     vendor.dolby.dvs-V1-ndk \
     vendor.dolby.hardware.dms@2.0 \
-    vendor.lenovo.hardware.battery-V5-ndk \
-    vendor.lenovo.hardware.display-V1-ndk \
-    vendor.lenovo.hardware.factory-V2-ndk \
-    vendor.lenovo.hardware.hyperschedule-V2-ndk \
-    vendor.lenovo.hardware.keyboard-V1-ndk \
-    vendor.lenovo.hardware.misc-V1-ndk \
-    vendor.lenovo.hardware.performance-V1-ndk \
-    vendor.lenovo.hardware.touchscreen-V3-ndk \
-    vendor.lenovo.hardware.usb-V1-ndk \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
     vendor.libdpmtcm \
     vendor.libmwqemiptablemgr \
-    vendor.qti.ImsRtpService-V1-ndk-vendor \
+    vendor.qti.ImsRtpService-V1-ndk_vendor \
     vendor.qti.ImsRtpService-aidl-Impl \
     vendor.qti.MemHal-V1-ndk \
     vendor.qti.data.factoryservice-V1-ndk \
     vendor.qti.data.mwqemaidlservice-V1-ndk \
     vendor.qti.data.slm@1.0 \
-    vendor.qti.diaghal-V1-ndk-vendor \
-    vendor.qti.diaghal@1.0-vendor \
+    vendor.qti.diaghal-V1-ndk_vendor \
+    vendor.qti.diaghal@1.0_vendor \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.hardware.ListenSoundModelAidl-V1-ndk \
     vendor.qti.hardware.alarm-V1-ndk \
@@ -2387,8 +2354,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.lceaidlservice-V1-ndk \
     vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
-    vendor.qti.hardware.display.allocator@4.0_prebuilt \
-    vendor.qti.hardware.display.composer3-V1-ndk_prebuilt \
+    vendor.qti.hardware.display.composer3-V1-ndk_vendor \
     vendor.qti.hardware.display.snapalloc-impl \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dsp-V1-ndk \
@@ -2540,15 +2506,6 @@ PRODUCT_PACKAGES += \
     qms-saidl.xml \
     snapdragon_services.xml \
     vendor.dolby.media.c2-default-service-dax.xml \
-    vendor.lenovo.hardware.battery-service.xml \
-    vendor.lenovo.hardware.display-service.xml \
-    vendor.lenovo.hardware.factory-service.xml \
-    vendor.lenovo.hardware.hyperschedule-service.xml \
-    vendor.lenovo.hardware.keyboard-service.xml \
-    vendor.lenovo.hardware.misc-service.xml \
-    vendor.lenovo.hardware.performance-service.xml \
-    vendor.lenovo.hardware.touchscreen-service.xml \
-    vendor.lenovo.hardware.usb.xml \
     vendor.qti.MemHal.xml \
     vendor.qti.camera.aon-impl.xml \
     vendor.qti.camera.offlinecamera-impl.xml \
@@ -2602,15 +2559,6 @@ PRODUCT_PACKAGES += \
     vendor.dolby.dms.service \
     vendor.dolby.media.c2-default-service-dax \
     vendor.dolby.media.c2-service-vision \
-    vendor.lenovo.hardware.battery-service \
-    vendor.lenovo.hardware.display-service \
-    vendor.lenovo.hardware.factory-service \
-    vendor.lenovo.hardware.hyperschedule-service \
-    vendor.lenovo.hardware.keyboard-service \
-    vendor.lenovo.hardware.misc-service \
-    vendor.lenovo.hardware.performance-service \
-    vendor.lenovo.hardware.touchscreen-service \
-    vendor.lenovo.hardware.usb-service \
     vendor.qti.MemHal-service \
     vendor.qti.camera.provider-service_64 \
     vendor.qti.hardware.alarm-service \
