@@ -26568,6 +26568,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.spu-V2-ndk",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.spu-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.trustedui-V1-ndk",
     owner: "lenovo",
     strip: {
@@ -30371,6 +30397,41 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "vendor.qti.hardware.spu-service",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.qti.hardware.spu-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "vendor.qti.hardware.spu-V2-ndk",
+                "android.hardware.common-V2-ndk",
+                "libcutils",
+                "libspcom",
+                "libqti-utils",
+                "libbinder",
+                "libbase",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "vendor.qti.hardware.trustedui-aidl-service-qti",
     owner: "lenovo",
     target: {
@@ -31908,6 +31969,41 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "sec_nvm",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/sec_nvm",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libspcom",
+                "libprotobuf-cpp-lite-21.12-vendorcompat",
+                "libbinder_ndk",
+                "libz",
+                "libcrypto",
+                "libminkdescriptor",
+                "libminksocket_vendor",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "sensors.qti",
     owner: "lenovo",
     target: {
@@ -31988,6 +32084,36 @@ cc_prebuilt_binary {
                 "libbase",
                 "libutils",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "spdaemon",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/spdaemon",
+            ],
+            shared_libs: [
+                "libspcom",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libmdmdetect",
+                "libhardware_legacy",
                 "libc++",
                 "libc",
                 "libm",
