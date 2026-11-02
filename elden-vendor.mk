@@ -648,6 +648,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
+    vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.thermal-service.elden.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal-service.elden.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/android.hardware.weaver-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.weaver-service-spu-qti.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/lenovo/elden/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
@@ -2488,6 +2489,7 @@ PRODUCT_PACKAGES += \
     ImsRtpService-aidl.xml \
     android.hardware.drm-service.xml \
     android.hardware.security.keymint-service-qti.xml \
+    android.hardware.thermal-service.elden.xml \
     bluetooth-finder.xml \
     bluetooth_hci.xml \
     bluetooth_sar.xml \
@@ -2555,6 +2557,7 @@ PRODUCT_PACKAGES += \
     android.hardware.identity-service-qti \
     android.hardware.security.keymint-service-qti \
     android.hardware.security.keymint-service-spu-qti \
+    android.hardware.thermal-service.elden \
     android.hardware.weaver-service-spu-qti \
     dvs-aidl-service \
     qvrservice \
