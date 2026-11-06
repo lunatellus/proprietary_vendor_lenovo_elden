@@ -121,6 +121,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/elden/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/bpf/qmsUidStats.o:$(TARGET_COPY_OUT_VENDOR)/etc/bpf/qmsUidStats.o \
+    vendor/lenovo/elden/proprietary/vendor/etc/cablconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cablconfig.xml \
     vendor/lenovo/elden/proprietary/vendor/etc/camera/10_0.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/10_0.jpg \
     vendor/lenovo/elden/proprietary/vendor/etc/camera/10_180.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/10_180.jpg \
     vendor/lenovo/elden/proprietary/vendor/etc/camera/10_270.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/10_270.jpg \
@@ -2457,7 +2458,6 @@ PRODUCT_PACKAGES += \
     lib-imsvtextutils \
     lib-imsvtutils \
     libdiag_system \
-    libimscamera_jni \
     libimsmedia_jni \
     libmmosal \
     libmmparser_lite \
@@ -2673,7 +2673,6 @@ PRODUCT_PACKAGES += \
     wifidisplayhalservice
 
 PRODUCT_PACKAGES += \
-    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
